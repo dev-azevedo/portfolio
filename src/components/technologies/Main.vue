@@ -66,34 +66,86 @@ import { ref } from "vue";
 import CardTechnologies from "../cardTechnologies/Main.vue";
 
 const technologiesBackend = ref([
-  { name: "C#", description: "Projeto x" },
-  { name: ".Net", description: "Projeto x" },
-  { name: "EntityFramework", description: "Projeto x" },
-  { name: "IdentityFramework", description: "Projeto x" },
-  { name: "Node Js", description: "Projeto x" },
-  { name: "TypeScript", description: "Projeto x" },
+  {
+    name: "C#",
+    description:
+      "C# é uma linguagem de programação desenvolvida pela Microsoft, usada principalmente para desenvolver aplicativos desktop, web e móveis. É conhecida por sua sintaxe clara e recursos robustos para desenvolvimento de software.",
+  },
+  {
+    name: ".Net",
+    description:
+      ".NET(DotNet) é uma plataforma de desenvolvimento de software da Microsoft que suporta a criação de uma variedade de aplicativos, desde web e desktop até móveis e serviços na nuvem, proporcionando alta performance e escalabilidade.",
+  },
+  {
+    name: "EntityFramework",
+    description:
+      "EntityFramework é uma ferramenta ORM (Object-Relational Mapping) para .NET(DotNet) que facilita o acesso e manipulação de dados em um banco de dados, simplificando operações CRUD e eliminando a necessidade de escrever SQL manualmente.",
+  },
+  {
+    name: "IdentityFramework",
+    description:
+      "IdentityFramework é um sistema de autenticação e autorização para aplicativos .NET(DotNet), fornecendo uma maneira segura e fácil de gerenciar identidades de usuários, incluindo login, registro e controle de acesso.",
+  },
+  {
+    name: "Node Js",
+    description:
+      "Node.js é um ambiente de execução JavaScript no lado do servidor, permitindo a construção de APIs rápidas e escaláveis com sua natureza assíncrona e baseada em eventos.",
+  },
+  {
+    name: "TypeScript",
+    description:
+      "TypeScript é um superconjunto tipado de JavaScript que compila para JavaScript puro, oferecendo recursos como tipagem estática e interfaces que ajudam a melhorar a manutenção do código e a detecção de erros.",
+  },
 ]);
 
 const technologiesFrontend = ref([
-  { name: "Javascript", description: "Projeto x" },
-  { name: "Vue Js", description: "Projeto x" },
-  { name: "React Js", description: "Projeto x" },
-  { name: "React Native", description: "Projeto x" },
-  { name: "TypeScript", description: "Projeto x" },
+  {
+    name: "Javascript",
+    description:
+      "JavaScript é uma linguagem de programação essencial para o desenvolvimento web, permitindo a criação de páginas interativas e dinâmicas em navegadores.",
+  },
+  {
+    name: "Vue Js",
+    description:
+      "Vue.js é um framework JavaScript progressivo para a construção de interfaces de usuário, oferecendo uma arquitetura baseada em componentes e ferramentas para gerenciar o estado do aplicativo de maneira eficiente.",
+  },
+  {
+    name: "React Js",
+    description:
+      "React.js é uma biblioteca JavaScript para a construção de interfaces de usuário, focada na criação de componentes de UI reutilizáveis e na renderização eficiente para proporcionar uma experiência de usuário rápida e responsiva.",
+  },
+  {
+    name: "React Native",
+    description:
+      "React Native é uma biblioteca JavaScript que permite o desenvolvimento de aplicativos móveis nativos usando React, possibilitando a criação de aplicativos que funcionam tanto em iOS quanto em Android a partir de uma única base de código.",
+  },
+  {
+    name: "TypeScript",
+    description:
+      "TypeScript é um superconjunto tipado de JavaScript que compila para JavaScript puro, oferecendo vantagens como a tipagem estática e a depuração avançada, o que ajuda a melhorar a manutenção e a robustez do código.",
+  },
 ]);
 
 const technologiesDb = ref([
   {
     name: "MySql",
     description:
-      "É um sistema de gerenciamento de banco de dados relacional de código aberto. É utilizado para armazenar e gerenciar dados de maneira eficiente, oferecendo suporte a operações SQL robustas.",
+      "MySQL é um sistema de gerenciamento de banco de dados relacional de código aberto, conhecido por sua eficiência e capacidade de lidar com grandes volumes de dados e altas cargas de trabalho.",
   },
   {
     name: "SqlServer",
     description:
-      "SQL Server é um sistema de gerenciamento de banco de dados relacional desenvolvido pela Microsoft. No Projeto x, SQL Server é utilizado para garantir alta disponibilidade e segurança dos dados empresariais.",
+      "SQL Server é um sistema de gerenciamento de banco de dados relacional desenvolvido pela Microsoft, oferecendo recursos avançados de segurança, escalabilidade e suporte a operações empresariais críticas.",
   },
-  { name: "PostgreSql", description: "Projeto x" },
-  { name: "Sqlite", description: "Projeto x" },
+  {
+    name: "PostgreSql",
+    description:
+      "PostgreSQL é um sistema de gerenciamento de banco de dados relacional de código aberto, conhecido por sua conformidade com os padrões SQL e extensibilidade, permitindo lidar com grandes volumes de dados e consultas complexas.",
+  },
+  {
+    name: "Sqlite",
+    description:
+      "SQLite é um banco de dados relacional embutido, famoso por sua leveza e simplicidade. É amplamente utilizado em desenvolvimento e testes devido à sua natureza autônoma e sem necessidade de configuração.",
+  },
 ]);
 </script>
