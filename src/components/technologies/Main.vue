@@ -60,7 +60,6 @@
   </section>
 </template>
 
-
 <script setup>
 import { ref } from "vue";
 import CardTechnologies from "../cardTechnologies/Main.vue";
@@ -92,7 +91,17 @@ const technologiesBackend = ref([
       "Node.js é um ambiente de execução JavaScript no lado do servidor, permitindo a construção de APIs rápidas e escaláveis com sua natureza assíncrona e baseada em eventos.",
   },
   {
+    name: "Prisma",
+    description:
+      "Node.js é um ambiente de execução JavaScript no lado do servidor, permitindo a construção de APIs rápidas e escaláveis com sua natureza assíncrona e baseada em eventos.",
+  },
+  {
     name: "TypeScript",
+    description:
+      "TypeScript é um superconjunto tipado de JavaScript que compila para JavaScript puro, oferecendo recursos como tipagem estática e interfaces que ajudam a melhorar a manutenção do código e a detecção de erros.",
+  },
+  {
+    name: "JWT",
     description:
       "TypeScript é um superconjunto tipado de JavaScript que compila para JavaScript puro, oferecendo recursos como tipagem estática e interfaces que ajudam a melhorar a manutenção do código e a detecção de erros.",
   },
@@ -121,6 +130,26 @@ const technologiesFrontend = ref([
   },
   {
     name: "TypeScript",
+    description:
+      "TypeScript é um superconjunto tipado de JavaScript que compila para JavaScript puro, oferecendo vantagens como a tipagem estática e a depuração avançada, o que ajuda a melhorar a manutenção e a robustez do código.",
+  },
+  {
+    name: "Axios",
+    description:
+      "TypeScript é um superconjunto tipado de JavaScript que compila para JavaScript puro, oferecendo vantagens como a tipagem estática e a depuração avançada, o que ajuda a melhorar a manutenção e a robustez do código.",
+  },
+  {
+    name: "Bootstrap",
+    description:
+      "TypeScript é um superconjunto tipado de JavaScript que compila para JavaScript puro, oferecendo vantagens como a tipagem estática e a depuração avançada, o que ajuda a melhorar a manutenção e a robustez do código.",
+  },
+  {
+    name: "Tailwind",
+    description:
+      "TypeScript é um superconjunto tipado de JavaScript que compila para JavaScript puro, oferecendo vantagens como a tipagem estática e a depuração avançada, o que ajuda a melhorar a manutenção e a robustez do código.",
+  },
+  {
+    name: "Styled Components",
     description:
       "TypeScript é um superconjunto tipado de JavaScript que compila para JavaScript puro, oferecendo vantagens como a tipagem estática e a depuração avançada, o que ajuda a melhorar a manutenção e a robustez do código.",
   },
