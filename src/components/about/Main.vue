@@ -1,8 +1,5 @@
 <template>
-  <section
-    id="about"
-    class="flex flex-col lg:flex-row gap-5 w-full py-16 relative"
-  >
+  <section class="flex flex-col lg:flex-row gap-5 w-full py-16 relative">
     <div class="rounded-md p-2 flex flex-col items-start justify-center">
       <h2 class="text-4xl mb-5 font-bold">
         <i class="bi bi-mortarboard"></i> Sobre

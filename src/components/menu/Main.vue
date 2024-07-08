@@ -7,16 +7,52 @@
     </div>
     <nav>
       <ul class="flex gap-10">
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#technologies">Conhecimentos</a></li>
-        <li><a href="#experienceWork">Experiência</a></li>
-        <li><a href="#projects">Projetos</a></li>
+        <li>
+          <button
+            type="button"
+            class="hover:text-emerald-400 transition ease-in-out duration-300"
+            @click="scrollToTop()"
+          >
+            Inicio
+          </button>
+        </li>
+        <li>
+          <a
+            href="#about"
+            class="hover:text-emerald-400 transition ease-in-out duration-300"
+            >Sobre</a
+          >
+        </li>
+        <li>
+          <a
+            href="#technologies"
+            class="hover:text-emerald-400 transition ease-in-out duration-300"
+            >Conhecimentos</a
+          >
+        </li>
+        <li>
+          <a
+            href="#experienceWork"
+            class="hover:text-emerald-400 transition ease-in-out duration-300"
+            >Experiência</a
+          >
+        </li>
+        <li>
+          <a
+            href="#projects"
+            class="hover:text-emerald-400 transition ease-in-out duration-300"
+            >Projetos</a
+          >
+        </li>
       </ul>
     </nav>
   </header>
 </template>
 
 <script setup>
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
 </script>
 
 <style lang="scss" scoped>

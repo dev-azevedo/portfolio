@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-col justify-center items-center">
     <Menu />
-    <div class="px-5 lg:px-56 w-full">
+    <div class="px-5 xl:px-56 w-full">
       <div class="flex flex-col xl:flex-row items-center justify-center gap-10">
         <Me
           data-aos="fade-up"
@@ -17,6 +17,7 @@
         />
       </div>
       <hr
+        id="about"
         class="my-10"
         data-aos="fade-right"
         data-aos-offset="200"
@@ -27,15 +28,15 @@
         data-aos-offset="200"
         data-aos-easing="ease-in-out"
       />
-      <hr class="my-10" data-aos="fade-right" />
+      <hr class="my-10" data-aos="fade-right" id="technologies" />
       <Technologies />
-      <hr class="my-10" />
+      <hr class="my-10" id="experienceWork" />
       <ExperienceWork
         data-aos="fade-up"
         data-aos-offset="200"
         data-aos-easing="ease-in-out"
       />
-      <hr class="my-10" />
+      <hr class="my-10" id="projects" />
       <Projects
         data-aos="fade-up"
         data-aos-offset="200"
@@ -68,6 +69,9 @@ onMounted(() => {
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+html {
+  scroll-behavior: smooth;
+}
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

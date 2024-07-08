@@ -1,8 +1,5 @@
 <template>
-  <section
-    id="technologies"
-    class="p-2 flex flex-col items-start justify-center py-24"
-  >
+  <section class="p-2 flex flex-col items-start justify-center py-24">
     <h2
       class="text-4xl mb-5 font-bold"
       data-aos="fade-up"
@@ -21,17 +18,20 @@
       <h3 class="text-xl mb-5"><i class="bi bi-braces"></i> Back-end</h3>
 
       <carousel
-        :items-to-scroll="1.5"
-        :wrap-around="true"
+        :itemsToShow="1"
+        :wrapAround="true"
         :transition="700"
+        :autoplay="1500"
+        :pauseAutoplayOnHover="true"
         :breakpoints="breakpoints"
       >
         <slide
-          v-for="technology in technologiesBE"
-          :key="technology.name"
-          class="m-2"
+          v-for="(technology, index) in technologiesBE"
+          :key="index"
+          class="md:m-2"
         >
           <CardTechnologies
+            class="carousel__item"
             :key="technology.name"
             :name="technology.name"
             :image="technology.image"
@@ -61,17 +61,21 @@
       <h3 class="text-xl mb-5"><i class="bi bi-code"></i> Front-end</h3>
 
       <carousel
-        :items-to-scroll="1.5"
-        :wrap-around="true"
+        :itemsToShow="1"
+        :itemsToScroll="1"
+        :wrapAround="true"
         :transition="700"
+        :autoplay="2000"
+        :pauseAutoplayOnHover="true"
         :breakpoints="breakpoints"
       >
         <slide
-          v-for="technology in technologiesFE"
-          :key="technology.name"
-          class="m-2"
+          v-for="(technology, index) in technologiesFE"
+          :key="index"
+          class="md:m-2"
         >
           <CardTechnologies
+            class="carousel__item"
             :key="technology.name"
             :name="technology.name"
             :image="technology.image"
@@ -103,19 +107,23 @@
       </h3>
 
       <carousel
-        :items-to-scroll="1.5"
-        :wrap-around="true"
+        :itemsToScroll="1"
+        :wrapAround="true"
         :transition="700"
+        :autoplay="2500"
+        :pauseAutoplayOnHover="true"
         :breakpoints="breakpoints"
       >
         <slide
-          v-for="technology in technologiesDB"
-          :key="technology.name"
-          class="m-2"
+          v-for="(technology, index) in technologiesDB"
+          :key="index"
+          class="md:m-2"
         >
           <CardTechnologies
+            class="carousel__item"
             :key="technology.name"
             :name="technology.name"
+            :image="technology.image"
             :description="technology.description"
           />
         </slide>
@@ -149,28 +157,28 @@ const technologiesDB = technologiesDb;
 
 const breakpoints = reactive({
   640: {
-    itemsToShow: 1.5,
-    snapAlign: "start",
+    itemsToShow: 1,
+    snapAlign: "center",
   },
 
   768: {
-    itemsToShow: 3,
-    snapAlign: "start",
+    itemsToShow: 2,
+    snapAlign: "center",
   },
 
-  1024: {
-    itemsToShow: 2,
-    snapAlign: "start",
+  920: {
+    itemsToShow: 3,
+    snapAlign: "center",
   },
 
   1280: {
     itemsToShow: 3,
-    snapAlign: "start",
+    snapAlign: "center",
   },
 
   1536: {
     itemsToShow: 4,
-    snapAlign: "start",
+    snapAlign: "center",
   },
 });
 </script>

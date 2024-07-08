@@ -19,6 +19,12 @@ import tailwindImg from "@/assets/tailwind.png";
 import styledComponentsImg from "@/assets/styledComponents.png";
 import axiosImg from "@/assets/axios.png";
 
+import mySqlImg from "@/assets/mysql.png";
+import sqlServerImg from "@/assets/sqlServer.png";
+import postgreSqlImg from "@/assets/prostreSql.png";
+import sqliteImg from "@/assets/sqLite.png";
+import mongoDbImg from "@/assets/mongoDb.png";
+
 export const technologiesBackend = [
   {
     name: "C#",
@@ -150,25 +156,30 @@ export const technologiesDb = [
     name: "MySQL",
     description:
       "Sistema de gerenciamento de banco de dados relacional de código aberto, conhecido por sua eficiência e capacidade de lidar com grandes volumes de dados e altas cargas de trabalho.",
+    image: mySqlImg,
   },
   {
     name: "SQL Server",
     description:
       "Sistema de gerenciamento de banco de dados relacional desenvolvido pela Microsoft, oferecendo recursos avançados de segurança, escalabilidade e suporte a operações empresariais críticas.",
+    image: sqlServerImg,
   },
   {
     name: "PostgreSQL",
     description:
       "Sistema de gerenciamento de banco de dados relacional de código aberto, conhecido por sua conformidade com os padrões SQL e extensibilidade, permitindo lidar com grandes volumes de dados e consultas complexas.",
+    image: postgreSqlImg,
   },
   {
     name: "SQLite",
     description:
       "Banco de dados relacional embutido, famoso por sua leveza e simplicidade. É amplamente utilizado em desenvolvimento e testes devido à sua natureza autônoma e sem necessidade de configuração.",
+    image: sqliteImg,
   },
   {
     name: "MongoDB",
     description:
       "Banco de dados NoSQL orientado a documentos, que armazena dados em formato JSON-like, permitindo alta flexibilidade e escalabilidade para aplicações modernas.",
+    image: mongoDbImg,
   },
 ];
