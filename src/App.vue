@@ -1,20 +1,46 @@
 <template>
   <section class="flex flex-col justify-center items-center">
     <Menu />
-    <div class="px-10 lg:px-56">
+    <div class="px-5 lg:px-56 w-full">
       <div class="flex flex-col xl:flex-row items-center justify-center gap-10">
-        <Me />
+        <Me
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-out"
+        />
 
-        <Contact class="mt-10 lg:mt-0 lg:pt-16 w-full lg:w-auto" />
+        <Contact
+          class="mt-10 lg:mt-0 lg:pt-16 w-full lg:w-auto"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-out"
+        />
       </div>
-      <hr class="my-10" />
-      <About />
-      <hr class="my-10" />
+      <hr
+        class="my-10"
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-out"
+      />
+      <About
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-out"
+      />
+      <hr class="my-10" data-aos="fade-right" />
       <Technologies />
       <hr class="my-10" />
-      <ExperienceWork />
+      <ExperienceWork
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-out"
+      />
       <hr class="my-10" />
-      <Projects />
+      <Projects
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-out"
+      />
     </div>
     <Footer />
   </section>
@@ -29,6 +55,12 @@ import ExperienceWork from "@/components/experienceWork/Main.vue";
 import Projects from "@/components/projects/Main.vue";
 import Technologies from "@/components/technologies/Main.vue";
 import Footer from "@/components/footer/Main.vue";
+import AOS from "aos";
+import { onMounted } from "vue";
+
+onMounted(() => {
+  AOS.init();
+});
 </script>
 
 

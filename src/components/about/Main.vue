@@ -1,5 +1,8 @@
 <template>
-  <section id="about" class="flex flex-col lg:flex-row gap-5 w-full py-16">
+  <section
+    id="about"
+    class="flex flex-col lg:flex-row gap-5 w-full py-16 relative"
+  >
     <div class="rounded-md p-2 flex flex-col items-start justify-center">
       <h2 class="text-4xl mb-5 font-bold">
         <i class="bi bi-mortarboard"></i> Sobre
@@ -18,5 +21,9 @@
         dados até soluções web e mobile para melhor interação com os usuários.
       </p>
     </div>
+
+    <i
+      class="bi bi-caret-down-fill text-emerald-400 text-4xl absolute bottom-0 animate-bounce"
+    ></i>
   </section>
 </template>
