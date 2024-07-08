@@ -23,7 +23,6 @@
       <carousel
         :items-to-scroll="1.5"
         :wrap-around="true"
-        :pause-autoplay-on-hover="true"
         :transition="700"
         :breakpoints="breakpoints"
       >
@@ -35,6 +34,7 @@
           <CardTechnologies
             :key="technology.name"
             :name="technology.name"
+            :image="technology.image"
             :description="technology.description"
           />
         </slide>
@@ -63,7 +63,6 @@
       <carousel
         :items-to-scroll="1.5"
         :wrap-around="true"
-        :pause-autoplay-on-hover="true"
         :transition="700"
         :breakpoints="breakpoints"
       >
@@ -75,6 +74,7 @@
           <CardTechnologies
             :key="technology.name"
             :name="technology.name"
+            :image="technology.image"
             :description="technology.description"
           />
         </slide>
@@ -105,7 +105,6 @@
       <carousel
         :items-to-scroll="1.5"
         :wrap-around="true"
-        :pause-autoplay-on-hover="true"
         :transition="700"
         :breakpoints="breakpoints"
       >

@@ -13,8 +13,9 @@
     </div>
 
     <div class="w-full h-full flex flex-col justify-center items-center">
-      <span><i class="bi bi-box text-4xl"></i></span>
-      <span>
+      <img v-if="props.image" :src="props.image" alt="" class="w-28" />
+      <span v-else><i class="bi bi-box text-8xl"></i></span>
+      <span class="">
         {{ props.name }}
       </span>
     </div>
@@ -27,6 +28,7 @@ import { defineProps } from "vue";
 const props = defineProps({
   name: String,
   description: String,
+  image: Image,
 });
 </script>
 
