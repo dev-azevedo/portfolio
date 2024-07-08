@@ -13,6 +13,7 @@
             class="hover:text-emerald-400 transition ease-in-out duration-300"
             @click="scrollToTop()"
           >
+            <i class="bi bi-house"></i>
             Inicio
           </button>
         </li>
@@ -20,28 +21,28 @@
           <a
             href="#about"
             class="hover:text-emerald-400 transition ease-in-out duration-300"
-            >Sobre</a
+            ><i class="bi bi-mortarboard"></i> Sobre</a
           >
         </li>
         <li>
           <a
             href="#technologies"
             class="hover:text-emerald-400 transition ease-in-out duration-300"
-            >Conhecimentos</a
+            ><i class="bi bi-lightbulb"></i> Conhecimentos</a
           >
         </li>
         <li>
           <a
             href="#experienceWork"
             class="hover:text-emerald-400 transition ease-in-out duration-300"
-            >Experiência</a
+            ><i class="bi bi-gear"></i> Experiência</a
           >
         </li>
         <li>
           <a
             href="#projects"
             class="hover:text-emerald-400 transition ease-in-out duration-300"
-            >Projetos</a
+            ><i class="bi bi-folder2-open"></i> Projetos</a
           >
         </li>
       </ul>
