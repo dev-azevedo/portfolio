@@ -6,14 +6,14 @@
 
     <div class="grid grid-cols-3 grid-flow-col auto-cols-max gap-6 w-full">
       <div class="h-56 bg-slate-400 rounded-md relative">
+        <img src="@/assets/loginSalesCrud.png" alt="salescrud" class="w-full h-full rounded-md border-0" />
         <div
           class="w-full h-full flex justify-center items-center absolute top-0 left-0 bg-slate-400/75 text-white rounded-md opacity-0 transition-all duration-300 ease-in hover:opacity-100"
         >
-          Projeto x
-        </div>
-
-        <div class="w-full h-full flex justify-center items-center">
-          Em contrução...
+          <a href="https://salescrud.netlify.app" target="_blank" class="text-white">
+            <i class="bi bi-link"></i>
+            SaleCcrud
+          </a>
         </div>
       </div>
       <div class="h-56 bg-slate-400 rounded-md relative">
